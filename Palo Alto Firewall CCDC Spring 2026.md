@@ -118,11 +118,11 @@
 * Create new Security Rules
 	* `set rulebase security rules <ruleName> rule-type [universal] from <zone> to <zone> destination <IP> source <IP> application [ <application> <application> ] service [application-default] log-setting <logProfile> log-end [yes] action <allow> profile-setting group <ipsProfile>` 
 	
-| Server        | Applications                      |
-| ------------- | --------------------------------- |
-| Ubuntu_Server | ssl, web-browsing                 |
-| Fedora        | pop3, smtp                        |
-| Splunk        | splunk, syslog, ssl, web-browsing |
+| Server        | Applications                            |
+| ------------- | ---------------------------------       |
+| Ubuntu_Server | ssl, web-browsing                       |
+| Fedora        | pop3, smtp, ssl (636), web-browsing     |
+| Splunk        | splunk, syslog, ssl, web-browsing       |
 
 
 - Check virtual router static route (default-route, destination: 0.0.0.0/0 interface: whatever outbound interface is, type: ip-address, value: vyos ip address
