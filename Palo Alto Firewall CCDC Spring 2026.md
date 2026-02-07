@@ -17,6 +17,9 @@
 * Establish Address Objects (**`Objects -> Addresses`**)
 	* `set address <addressName> ip-netmask <IP>`
 
+* Establish Service Objects (**`Objects -> Services`**)
+	* `set service <serviceName> protocol <tcp/udp> port <port>`
+
 | Server            | IP            |
 | ----------------- | ------------- |
 | Ubuntu_Server     | 172.20.242.30 |
