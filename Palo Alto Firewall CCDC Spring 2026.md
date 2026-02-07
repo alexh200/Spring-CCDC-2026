@@ -38,13 +38,16 @@
 **ZONE PROTECTION**
 
 * Create the zone protection profile (**`Network -> Network Profiles -> Zone Protection`**)
-	* `set network profiles zone-protection-profile <name> scan 8001 action block
+	* `set network profiles zone-protection-profile <name> scan 8001 action block`
 	* `set network profiles zone-protection-profile <name> scan 8002 action block`
 	* `set network profiles zone-protection-profile <name> scan 8003 action block`
 	* `set network profiles zone-protection-profile <name> discard-unknown-option yes`
 	* `set network profiles zone-protection profile <name> discard-malformed-option yes`
 	* `set network profiles zone-protection profile <name> discard-loose-source-routing yes`
 	* `set network profiles zone-protection profile <name> discard-strict-source-routing yes`
+
+* Apply the zone protection profile (**`Network -> Network Profiles -> Zone Protection`**)
+	* `set zone outside network zone-protection-profile <protectionProfile>`
 
 **ADMIN SECURITY**
 
