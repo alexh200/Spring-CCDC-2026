@@ -33,7 +33,7 @@
 **LOG FORWARDING**
 
 * Create a syslog forwarding method (**`Device -> Server Profiles -> Syslog`**)
-	* `set shared log-settings syslog <name> server <serverName> server <IP> transport <TCP/UDP> port [514] format [BSD/UDP, IETF/TCP] facility [LOG_USER]`
+	* `set shared log-settings syslog <name> server <serverName> server <IP> transport <TCP/UDP> port [514] format [BSD/LEGACY, IETF/STANDARD] facility [LOG_USER]`
 * Create log-forwarding profile (**`Objects -> Log-Forwarding`**)
 	* `set shared log-settings profiles <profileName> match-list <matchListName> log-type [threat] filter "All Logs" send-syslog <syslogProfile>`
 	* `set shared log-settings profiles <sameProfileName> match-list <matchListName> log-type [traffic] filter "All Logs" send-syslog <syslogProfile>`
